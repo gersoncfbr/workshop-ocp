@@ -3,12 +3,12 @@ apiVersion: "v1"
 metadata:
   name: "workshop-pipeline"
   annotations:
-    pipeline.alpha.openshift.io/uses: '[{"name": "workshop-openshift", "kind": "DeploymentConfig"}]'
+    pipeline.alpha.openshift.io/uses: '[{"name": "workshop-ocp", "kind": "DeploymentConfig"}]'
 spec:
   source:
     type: "Git"
     git:
-      uri: "http://github.com/gersoncfbr/workshop-openshift.git"
+      uri: "http://github.com/gersoncfbr/workshop-ocp.git"
   strategy:
     type: "JenkinsPipeline"
     jenkinsPipelineStrategy:
