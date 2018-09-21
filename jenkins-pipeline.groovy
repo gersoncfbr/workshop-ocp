@@ -8,7 +8,7 @@ spec:
   source:
     type: "Git"
     git:
-      uri: "http://github.com/gersoncfbr/workshop-ocp.git"
+      uri: "https://github.com/gersoncfbr/workshop-ocp.git"
   strategy:
     type: "JenkinsPipeline"
     jenkinsPipelineStrategy:
